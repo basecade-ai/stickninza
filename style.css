@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  background-color: #1A0000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2em;
+  font-weight: 900;
+  color: #FF6347;
+}
+
+#introduction {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: opacity 2s;
+  color: #FFD700;
+}
+
+#restart {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #1E90FF;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  cursor: pointer;
+}
+
+#perfect {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
+  color: #FFD700;
+}
+
+#youtube,
+#youtube-card {
+  display: none;
+}
+
+/* Social Links Styling */
+#social-links {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(70, 0, 0, 0.6);
+  border-radius: 50%;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-link:hover {
+  transform: scale(1.15);
+  background-color: rgba(110, 0, 0, 0.8);
+}
+
+.social-icon {
+  width: 22px;
+  height: 22px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+}
+
+.social-link img {
+  width: 22px;
+  height: 22px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+}
